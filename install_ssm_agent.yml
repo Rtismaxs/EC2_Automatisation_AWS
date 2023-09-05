@@ -1,0 +1,15 @@
+- name: "Install amazon-ssm-agent" # On nomme notre fichier .yml
+  # Paramètres par défaut :
+  hosts: default
+  become : true
+
+  # Le block tasks permet de réaliser des actions
+  tasks:
+    - name: Install amazon-ssm-agent # On nomme notre action
+      yum:
+        # On va installer le fichier "amazon-ssm-agent" depuis une URL
+  
+        name: https://s3.eu-west-3.amazonaws.com/amazon-ssm-eu-west-3/latest/linux_amd64/amazon-ssm-agent.rpm
+
+    
+   

@@ -1,0 +1,5 @@
+aws_access_key = " "
+aws_secret_key = " "
+region_key = "eu-west-3"
+ami_name_key = "shrfactory-ami {{timestamp}}"
+instance_type_key = "t3.xlarge"
